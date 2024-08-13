@@ -1,7 +1,61 @@
 ﻿@page "/"
+<PageTitle>Assessor</PageTitle>
 
-<PageTitle>Home</PageTitle>
+<section class="container border border-black">
+    <!--Shows first screen-->
+    @if (showIntro)
+    {
+        <h1 class="text-3xl mb-4 p-2">Compatibility Checker</h1>
+        <p class="p-2">Please complete this software wizard to see whether your Mac should be able to run Grand Theft Auto
+            V.</p>
+        <button class='bttn' @onclick="agreement">Start</button>
+    }
+    <!-- Shows Terms and Conditions -->
+    @if (showAgreement)
+    {
+        <p class="p-4 font-serif text-sm">This application aims to give you a rough estimation whether your Mac should be able to
+            run Grand Theft Auto V.
+            Be reminded, however, that the advice given by this application is in no way, shape or form definitive and is
+            merely a rough estimation
+            based on previous experiences with the game.</p>
+        <p class="p-4 font-serif text-sm">No rights can be derived from this advice in any shape or form. It is possible that fixes
+            or new ways
+            to run the game on MacOS have been introduced in the meantime or that information is outdated. While the creator
+            of this
+            application tries to keep the information up-to-date, you are always welcome to open an Issue inside the <a
+                href="https://github.com/jiyorude/Assessor/issues" target="_blank">GitHub</a>
+            repository.</p>
+        <p class="p-4 mb-4 font-serif text-sm">
+            If your advice mentions the usage of any third-party software, it is recommended to download a trial of the
+            software to verify that it works properly before purchase.
+            Purchase and usage of any third-party software is fully done at your own risk.
+        </p>
+        <p class="p-4 mb-2 font-serif text-sm"> By clicking agree, you agree to these terms and conditions.</p>
+        <div class="gap-x-10 flex">
+            <button class="text-indigo-500 p-4 border border-black rounded-full font-serif" @onclick="agreementNo">I do not agree</button>
+            <button class="text-indigo-500 p-4 border border-black rounded-full font-serif" @onclick="agreementYes">I agree.</button>
+        </div>
+    }
+</section>
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
+@code
+{
+    private bool showIntro = true;
+    private bool showAgreement = false;
+    private bool showQ1 = false;
+    private void agreement()
+    {
+        showIntro = false;
+        showAgreement = true;
+    }
+    private void agreementNo()
+    {
+        showIntro = true;
+        showAgreement = false;
+    }
+    private void agreementYes()
+    {
+        showAgreement = false;
+        showQ1 = true;
+    }
+}
