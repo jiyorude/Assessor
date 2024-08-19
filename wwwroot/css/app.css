@@ -1,8 +1,12 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
+@tailwind components;
 
 #app {
   @apply max-w-xl min-w-12;
   @apply border border-black;
+}
+
+button {
+  @apply !bg-slate-800 !text-white p-2 rounded-sm border border-black;
 }

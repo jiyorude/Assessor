@@ -4,39 +4,43 @@
 <section class="container">
     <!--Shows first screen-->
     @if (showIntro)
-    {
-        <h1 class="text-3xl font-serif mb-4 p-2">Compatibility Checker</h1>
-        <p class="p-2 font-serif text-sm">Please complete this software wizard to see whether your Mac should be able to run Grand Theft Auto
-            V.</p>
-        <button @onclick="agreement">Start</button>
+    {   <img src="#" alt="#" class="#"> // TODO: ADD SVG LOGO IN HERE WITH ADDITIONAL MARGIN
+        <p class="font-serif p-4 text-sm text-balance">Version 0.0.0 - September 2024</p>
+        <p class="font-serif p-4 text-sm text-balance">Wizard application that helps you find out if your Mac can run Grand Theft Auto V.</p>
+        <p class="font-serif p-4 text-sm text-balance">Please press the button underneath to start the application.</p>
+        <button @onclick="agreement" class="ml-4">Start</button>
+        <section class="flex gap-x-10">
+            <div class="flex gap-x-2">
+                <img src="#" alt="#" class="#">
+                <p class="font-serif p-4 text-xs text-balance font-bold">Code Repository</p>
+            </div>
+            <div class="flex gap-x-2">
+                <img src="#" alt="#" class="#">
+                <p class="font-serif p-4 text-xs text-balance font-bold">Issues</p>
+            </div>
+
+        </section>
     }
     <!-- Shows Terms and Conditions -->
     @if (showAgreement)
     {
-        <p class="p-4 font-serif text-sm">This application aims to give you a rough estimation whether your Mac should be
-            able to
-            run Grand Theft Auto V.
-            Be reminded, however, that the advice given by this application is in no way, shape or form definitive and is
-            merely a rough estimation
-            based on previous experiences with the game.</p>
+        <p class="p-4 font-serif text-sm" role="text">This application aims to give you a rough estimation whether your Mac should be
+            able to run Grand Theft Auto V. Be reminded, however, that the advice given by assessor is in no way, shape or form definitive and is
+            merely a rough estimation based on previous experiences with the game.</p>
         <p class="px-4 pb-4 pt-2 font-serif text-sm">No rights can be derived from this advice in any shape or form. It is
-            possible that fixes
-            or new ways
-            to run the game on MacOS have been introduced in the meantime or that information is outdated. You are always
-            welcome to open an Issue inside the <a href="https://github.com/jiyorude/Assessor/issues"
-                target="_blank">GitHub</a>
-            repository to address these issues.</p>
+            possible that fixes or new ways to run the game on MacOS have been introduced in the meantime or that information is outdated. 
+            You are always welcome to open an Issue inside the <a href="https://github.com/jiyorude/Assessor/issues"
+            target="_blank">GitHub</a> repository to address these issues.</p>
         <p class="p-4 mb-4 font-serif text-sm">
             If your advice mentions the usage of any third-party software, it is recommended to download a trial of the
             software to verify that it works properly before purchase.
             Purchase and usage of any third-party software is fully done at your own risk.
         </p>
         <p class="p-4 mb-2 font-serif text-sm"> By clicking agree, you agree to these terms and conditions.</p>
-        <div class="gap-x-10 flex">
-            <button class="text-indigo-500 bg-slate-800 p-4 border border-black rounded font-serif" @onclick="agreementNo">I
-                do not agree</button>
-            <button class="text-indigo-500 bg-slate-800 p-4 border border-black rounded font-serif"
-                @onclick="agreementYes">I agree.</button>
+        <div class="pl-4 gap-x-10 flex">
+            <button @onclick="agreementNo">I
+                do not agree.</button>
+            <button @onclick="agreementYes">I agree.</button>
         </div>
     }
 </section>
