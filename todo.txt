@@ -1,0 +1,107 @@
+QUESTION 1:
+Images: Apple Icon, About This Mac. System Information
+
+On the top left of your screen, you see the Apple icon.
+Click on it, followed by 'About this Mac'. You should see
+the following screen, or something similar. You could also use the
+magnifying glass in the top right and search for 'System Information'.
+
+
+What kind of chip is in your device?
+
+A: PowerPC
+B: Intel
+C: Apple Sillicon (f.e. M1/M2/M3 lines and higher)
+
+
+If A is selected, directly go to the final screen:
+"Your Mac is unable to run Grand Theft Auto V"
+
+If B is selected, move on towards the Intel branch
+If C is selected, move on towards the Silicon branch
+
+
+INTEL BRANCH:
+Your computer has an Intel processor. Check the 'About this Mac' and/or 'System Information' under the 'Graphics' Tab.
+What kind of Graphics Chip is in your computer?. If you have an external GPU, select the brand of the most powerful one.
+
+A: Intel Graphics Chip
+B: NVIDIA Graphics Chip
+C: AMD Graphics Chip
+
+
+Check your available Hard Drive space on your mac. Is there at least 150-200GB available, or are you able to clear this much amount of space?
+A: Yes 
+B: No 
+
+
+How much RAM is available in your machine?
+
+A: Less than 4GB
+B: Exactly 4GB 
+C: 6 to 8 GB
+D: 9 to 15GB
+E: 16GB or more
+
+
+If A in RAM is selected:
+Directly head on over to the final screen: your computer cannot run GTA V
+
+If B in RAM is selected:
+If Intel GPU:
+You have exactly 4GB of RAM available, which is the bare minimum required to run GTA V.
+However, since you've stated your computer has an Intel GPU, you will have to test compatibility yourself on a case-to-case basis 
+and install the game to see if it runs and to which degree.
+
+Please click the button below to see your advice.
+[Button]
+
+If not Intel GPU:
+You have exactly 4GB of RAM available, which is the bare minimum required to run GTA V. You should be able to run the game
+on lower graphical settings, depending on the strength of your processor and GPU.
+
+Please click the button below to see your advice.
+[button]
+
+
+ADVICE INTEL:
+
+[IF 150-200GB CAN BE CLEARED]
+The best way for you to play Grand Theft Auto V is through Bootcamp Assistant. On the top right of your screen, click on the
+magnifying glass and search for 'Bootcamp Assistant'. Bootcamp Assistant will allow you to dual-boot Windows next to MacOS. 
+Once initiated, a Wizard will open and guide you through the Windows installation process. Once installed, you can boot into Windows
+while holding the OPTION key while booting up your mac. You will see two hard drive icons: one for MacOS, one for Windows.
+Navigate to Windows with your arrow keys and hit the return key to boot into Windows.
+
+Please be reminded you will need to purchase a legitimate copy of Windows yourself, alongside a way to install it (such as a Hard Drive or USB stick depending on
+the requirements of Bootcamp Assistant). Make sure to check in the Bootcamp Assistant software beforehand which versions of Windows are supported.
+
+[IF NO 150-200GB CAN BE CLEARED]
+The best way for you to play Grand Theft Auto V is through a virtual machine created with software such as VMWare Fusion or Parallels Desktop.
+Since you are unable to clear at least 150 to 200GB of hard drive space, your best chance to run the game is to create a virtual Windows machine on a external
+HDD/SSD with at least that amount of space available. You MUST have the HDD/SSD attached to your computer every time you wish to boot the game.
+
+Please be reminded you will need to purchase a legitimate copy of Windows yourself, including an external HDD/SSD if you don't have access to one.
+Make sure to check which versions of Windows are compatible with VMWare Fusion and/or Parallels beforehand.
+
+Before running the virtual machine, try to allocate as much resources (RAM, GPU power, processing power) to it as you safely can (do this at your own risk), don't run
+additional applications in the background to save RAM, and run your virtual machine in fullscreen mode for the best results.
+If you are unsure whether how much resources you can safely allocate, don't do anything and leave it at the default settings.
+
+[IF RAM WAS 4GB EXACT]
+You have exactly 4GB of RAM available, which is the bare minimum required to run GTA V. You should be able to run the game
+on lower graphical settings, depending on the strength of your processor and GPU. 
+
+[IF RAM IS HIGHER, ADJUST THIS TEXT BASED ON PERFORMANCE]
+
+
+[IF INTEL GPU] Since you have a Intel GPU, you will have to test compatibility on a case-to-case basis to see for yourself if
+the game runs.
+
+Please install the game and run it on the lowest graphical settings and resolution. Document for yourself how well
+the game runs. If it runs well, try to increase the resolution and graphical settings until you are experiencing slowdowns.
+When that happens, revert back to settings that yield higher framerates.
+
+If you experience slowdowns on the lowest graphical settings, your computer is unable to properly run the game.
+This means you are most likely unable to complete the guide to full satisfaction.
+
